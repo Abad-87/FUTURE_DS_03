@@ -1,84 +1,110 @@
-Bank Marketing Campaign – Key Insights Report
-Total Contacts: 86,399
-Total Conversions (Term Deposit Subscriptions): 9,929
-Overall Conversion Rate: 11.49%
-1. Channel Performance
+# Bank Marketing Campaign Analysis
 
-Cellular performs significantly better than Telephone and Unknown contacts.
-Unknown contact method has the lowest conversion rate (~4%).
-Recommendation: Prioritize cellular calls wherever possible. Avoid or minimize unknown contacts.
+## Overview
+Analysis of 86,399 telemarketing contacts from the UCI Bank Marketing dataset (combining `bank-full.csv` and `bank-additional-full.csv`).
 
-2. Call Duration (Strongest Zero-Lag Predictor)
+**Key Metrics:**
+- **Total Contacts**: 86,399
+- **Total Conversions** (Term Deposit Subscriptions): 9,929
+- **Overall Conversion Rate**: **11.49%**
 
-Calls under 1 minute → Extremely low conversion (~0.2%)
-1-3 minutes → ~4%
-3-5 minutes → ~11%
-5-10 minutes → ~19%
->10 minutes → 48%+ conversion rate
+---
 
-Key Insight: Longer, more engaging conversations dramatically increase success.
-Action: Train agents to quickly qualify and extend high-potential calls beyond 5–10 minutes.
-3. Seasonality & Timing
+## Key Insights
 
-Best months: March (52%), September (46.5%), October (43.8%), December (46.7%)
-Worst month: May (only 6.7%)
-Strong seasonal pattern exists.
+### 1. Channel Performance
+- **Cellular** significantly outperforms Telephone and Unknown contacts.
+- Unknown contact method has the lowest conversion rate (~4%).
+- **Recommendation**: Prioritize cellular calls. Minimize unknown contacts.
 
-Recommendation: Allocate maximum budget and resources to March, September, October, and December campaigns. Reduce or re-test May campaigns.
-4. Age Group Performance
+### 2. Call Duration (Strongest Zero-Lag Predictor)
+- Calls <1 minute → ~0.2% conversion
+- 1-3 minutes → ~4%
+- 3-5 minutes → ~11%
+- 5-10 minutes → ~19%
+- **>10 minutes → ~48%+ conversion**
 
-65+ age group: Highest conversion at 42.1%
-Under 25: Very strong at 25.6%
-Middle age groups (35–54) show lower performance (~9–13%)
+**Insight**: Longer, engaging conversations dramatically improve success.  
+**Action**: Train agents to qualify quickly and extend high-potential calls beyond 5–10 minutes.
 
-Insight: Older customers and young customers are most receptive.
-Action: Create targeted campaigns for seniors (65+) and students/young professionals.
-5. Job & Segment Performance
+### 3. Seasonality & Timing
+- **Best months**: March (52%), September (46.5%), October (43.8%), December (46.7%)
+- **Worst month**: May (6.7%)
 
-Top performing jobs: Students, Retired, Management, Technician (in varying order)
-Best segments often combine Student/Retired + Tertiary education
+**Recommendation**: Focus maximum budget and resources on March, September, October, and December. Reduce or re-test May campaigns.
 
-Recommendation: Build lookalike audiences around students and retired customers.
-6. Education Level
+### 4. Age Group Performance
+- **65+**: Highest conversion at **42.1%**
+- **Under 25**: Strong at **25.6%**
+- Middle ages (35–54): Lower performance (~9–13%)
 
-Customers with tertiary (university) education generally convert better.
-Unknown education level performs poorly.
+**Action**: Target seniors (65+) and young customers/students.
 
-7. Previous Campaign Outcome
+### 5. Job & Segment Performance
+- Top jobs: **Students**, **Retired**, **Management**, **Technician**
+- Best segments often combine **Student/Retired + Tertiary education**
 
-When previous outcome was "success", current conversion rate jumps to ~65%
-This is one of the strongest signals in the data.
+### 6. Previous Campaign Outcome
+- When previous outcome was **"success"**, current conversion jumps to **~65%**
 
-Golden Rule: Aggressively re-contact customers who previously subscribed (warm leads).
-8. Housing & Loan Status
+**Golden Rule**: Aggressively re-contact previous successful customers (very high ROI).
 
-Customers with no housing loan tend to convert better.
-Combination of housing + loan affects willingness to subscribe.
+### 7. Other Observations
+- Tertiary (university) educated customers convert better.
+- Customers with no housing loan tend to perform better.
+- Higher account balance shows positive correlation with conversion.
+- More calls in a campaign often lead to diminishing returns.
 
-9. Campaign Intensity
+---
 
-More calls in a campaign (higher campaign value) generally leads to diminishing returns.
-Best results usually come from 1–4 contacts.
+## Strategic Recommendations (Prioritized)
 
-10. Account Balance
+1. **Engagement Training** — Focus on increasing average call duration (target >5 minutes for qualified leads).
+2. **Channel Optimization** — Shift as many contacts as possible to cellular.
+3. **Seasonal Planning** — Heavy campaigns in Mar, Sep, Oct, Dec.
+4. **Targeted Audience**:
+   - Age 65+ and under 25
+   - Students and Retired customers
+   - Tertiary educated individuals
+5. **Re-engagement Strategy** — Dedicated track for previous "success" outcomes.
+6. **Lead Qualification** — Use call duration and previous outcome as real-time scoring signals.
 
-Higher balance customers show better conversion tendency (visible in boxplot distribution).
+---
 
-Top Strategic Recommendations (Prioritized)
+## Visualizations
 
-Focus on Engagement — Train agents to increase average call duration (target >5 minutes for qualified leads).
-Channel Optimization — Shift as many contacts as possible to cellular.
-Seasonal Planning — Heavy campaign push in March, Sep, Oct, Dec. Light or experimental in May.
-Targeted Audience — Prioritize:
-Age 65+ and under 25
-Students and Retired customers
-Tertiary educated individuals
+All charts are saved in the `charts/` folder:
 
-Re-engagement Strategy — Create a dedicated nurturing track for customers with previous "success" outcome (very high ROI).
-Lead Qualification — Use call duration and previous outcome as real-time scoring signals.
+### Static PNG Charts:
+- `01_Overall_Conversion.png`
+- `02_Channel_Funnel.png`
+- `03_Duration_Funnel.png`
+- `04_Monthly_Seasonality.png`
+- `05_Age_Group.png`
+- `06_Top_Jobs.png`
+- `07_Education.png`
+- `08_Previous_Outcome.png`
+- `09_Housing_Loan.png`
+- `10_Campaign_Effect.png`
+- `11_Balance_Boxplot.png`
+- `12_Top_Segments.png`
 
-Quick Wins (Low Effort, High Impact)
+### Interactive HTML Charts (if Plotly is installed):
+Files ending with `_Interactive.html` provide hover tooltips showing exact counts and percentages.
 
-Script training focused on extending quality conversations
-Strict preference for cellular contact
-Immediate re-contact list for previous successes
+---
+
+## How to View Charts
+1. Open the `charts` folder in VS Code.
+2. Double-click any `.png` file to view.
+3. For interactive versions, open the `.html` files in your browser.
+
+---
+
+## Business Impact
+Implementing the above recommendations (especially call duration training, seasonal focus, and re-engagement of previous successes) can significantly improve conversion rates and campaign ROI.
+
+---
+
+**Generated on**: April 2026  
+**Dataset**: UCI Bank Marketing (bank-full + bank-additional-full)
