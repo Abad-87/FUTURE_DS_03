@@ -72,22 +72,21 @@ Analysis of 86,399 telemarketing contacts from the UCI Bank Marketing dataset (c
 ---
 
 ## Visualizations
-
-All charts are saved in the `charts/` folder:
-
-### Static PNG Charts:
-- `01_Overall_Conversion.png`
-- `02_Channel_Funnel.png`
-- `03_Duration_Funnel.png`
-- `04_Monthly_Seasonality.png`
-- `05_Age_Group.png`
-- `06_Top_Jobs.png`
-- `07_Education.png`
-- `08_Previous_Outcome.png`
-- `09_Housing_Loan.png`
-- `10_Campaign_Effect.png`
-- `11_Balance_Boxplot.png`
-- `12_Top_Segments.png`
+Screenshots -
+   
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/01_Overall_Conversion.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/02_Channel_Funnel.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/03_Duration_Funnel.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/04_Monthly_Seasonality.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/05_Age_Group.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/06_Top_Jobs.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/07_Education.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/08_Previous_Outcome.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/09_Housing_Loan.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/09_Housing_Loan.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/10_Campaign_Effect.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/11_Balance_Boxplot.png)
+![Dashboard Previews](https://github.com/Abad-87/FUTURE_DS_03/blob/main/12_Top_Segments.png)
 
 ### Interactive HTML Charts (if Plotly is installed):
 Files ending with `_Interactive.html` provide hover tooltips showing exact counts and percentages.
